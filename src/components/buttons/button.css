@@ -1,0 +1,28 @@
+.button{
+
+    background-color: blue;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 5rem;
+    border-radius: 28px;
+    font-size: 2rem;
+    text-transform: capitalize;
+    border-color: blueviolet;
+}
+
+
+.button:hover{
+    
+}
+
+        /* &--primary {
+            background-color: #4174E9;
+            border: none;
+            color: black;
+            padding: 1rem;
+            border-radius: 2px;
+    
+        } */
