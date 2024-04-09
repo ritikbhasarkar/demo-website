@@ -1,13 +1,15 @@
 "use client"
 
-import { FC } from 'react';
-import './button.css';
+import { FC, ReactElement } from 'react';
+import './button.scss';
+
 
 
 type ButtonProp = {
   text:string;
   variant?: 'primary' | 'secondary';
   size?:'small'|'medium';
+  icon?:ReactElement ;
   onClick?:()=> void;
 }
 
@@ -26,7 +28,7 @@ const Button: FC<ButtonProp> = ({size,variant ,...props}) =>{
   // }
   
   return (
-    <button className={buttonClasses}>{props.text}</button>
+    <button className={buttonClasses}>{props.icon}{props.text}</button>
   )
 }
 

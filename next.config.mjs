@@ -1,10 +1,18 @@
 /** @type {import('next').NextConfig} */
 
 
+
 const nextConfig = {
-  // sassOptions: {
-  //   includePaths: ["path/to/your/scss/directory"], // Adjust the path
-  // },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "",
+        port: "",
+        pathname: "/image/upload/**",
+      },
+    ],
+  },
 };
 
 export default nextConfig;

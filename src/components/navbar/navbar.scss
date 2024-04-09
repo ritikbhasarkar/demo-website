@@ -1,0 +1,66 @@
+@import '/src/Themes/mixins.scss';
+@import '/src/Themes/variables.scss';
+
+
+.navbar{
+    padding: 1rem 8rem;
+
+    &--nav-section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &--content{
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+
+            &--icon{
+                text-transform: capitalize;
+            }
+
+            &--page-routes{
+                display: flex;
+                align-items: center;
+                height: 55px;
+                gap: 2rem;
+
+               a{
+                display: flex;
+                justify-content: space-around;
+                font-size: 1.1rem;
+                text-decoration: none;
+                color: $secondary-text-color;
+                font-weight: 600;
+               }
+
+                &--links{
+                    @include display-flex-center-div;
+                    gap: 0.3rem;  
+                    color: $secondary-text-color;
+                }
+            }
+        }
+
+        &--nav-buttons{
+            @include display-flex-center-div;
+
+            &--login-btn{
+                margin: 8px;
+
+                span{
+                    font-weight: 700;
+                    font-size: 1.1;
+                    color: $secondary-text-color;
+                }
+            }
+            &--signup-btn{
+                margin:8px;
+            }
+        }
+    }
+}
+
+.links-icon{
+    font-size: 0.8rem;
+}

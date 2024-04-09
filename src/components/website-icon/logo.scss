@@ -1,0 +1,22 @@
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    
+
+    &--icon{
+        display: flex;
+        align-items: center;
+
+       img{
+        object-fit: cover;
+        border-radius: 5px;
+       }
+    }
+
+    &--logo-heading{
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+}

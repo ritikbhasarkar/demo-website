@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
+
 import Button from "./page";
 
 const meta: Meta<typeof Button> = {
@@ -30,5 +31,6 @@ export const Base: Story ={
         text:'Button',
         size:'small',
         variant:'primary',
+        // icon:ReactElement,
     }
 }
