@@ -3,12 +3,9 @@
 .featured-client{
     @include display-flex-center-div;
     gap: 0.4rem;
-    margin-right:20px;
-    margin-left:20px;
-
-    &--client-logo{
-        object-fit: contain;
-    }
+    // margin-right:20px;
+    // margin-left:20px;
+    flex-shrink: 0;
 
     &--client-company-name{
         font-size: 1.5rem;

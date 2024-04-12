@@ -4,7 +4,6 @@
 
 .hero-section{
     min-height: 100vh;
-    padding-top: 1rem;
     padding-bottom: 3rem;
     position: relative;
     background-color: #F9FAFB;
@@ -18,9 +17,9 @@
             height: 100%;
             background-size: 80px 80px;
             background-image:
-                linear-gradient(to right, rgb(128, 128, 128, 0.2) 1.2px, transparent 1px),
-                linear-gradient(to bottom, rgb(128, 128, 128, 0.2) 1.2px, transparent 1px);
-            mask-image: radial-gradient(circle, black 8%, rgba(0, 0, 0, 0) 80%);
+                linear-gradient(to right, rgb(128, 128, 128, 0.5) 1.2px, transparent 1px),
+                linear-gradient(to bottom, rgb(128, 128, 128, 0.5) 1.2px, transparent 1px);
+            mask-image: radial-gradient(circle, black 10%, rgba(0, 0, 0, 0) 60%);
             
     }
 

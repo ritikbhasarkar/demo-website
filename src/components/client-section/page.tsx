@@ -1,11 +1,8 @@
-import FeaturedClient from "../featured-client/page";
-import './client-section.scss'
 
-import hdfcLogo from '/Users/Legion/demo-website/public/company/hdfc.png'
-import lenskartLogo from '/Users/Legion/demo-website/public/company/lenskart.png'
-import teslaLogo from '/Users/Legion/demo-website/public/company/tesla.png'
-import uberLogo from '/Users/Legion/demo-website/public/company/uber.png'
 
+// import FeaturedClient from "../featured-client/page";
+import './client-section.scss';
+// import Boltshift from './icon/nietzche.svg'
 
 const ClientSection= () => {
   return (
@@ -14,13 +11,15 @@ const ClientSection= () => {
         <span>Join 4,000+ companies already growing</span>
       </div>
       <div className="client-section--client-logos">
-        <FeaturedClient icon={hdfcLogo} text={'HDFC'} width={45} height={45}/>
-        <FeaturedClient icon={lenskartLogo} text={'Lenskart'} width={45} height={45}/>
-        <FeaturedClient icon={teslaLogo} text={'Tesla'} width={45} height={45}/>
-        <FeaturedClient icon={uberLogo} text={'Uber'} width={45} height={45}/>
+       {/* <FeaturedClient text="Boltshift" icon='https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/html5.svg'/>    */}
+       {/* <FeaturedClient text="nietzche" icon='./icon/nietzsche.svg'/> */}
+       {/* <Boltshift/> */}
       </div>
     </div>
   )
 }
 
 export default ClientSection
+
+
+

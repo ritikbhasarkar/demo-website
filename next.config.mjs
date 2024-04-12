@@ -13,6 +13,15 @@ const nextConfig = {
       },
     ],
   },
+
+  // webpack: (config) => {
+  //   config.module.rules.push({
+  //     test: /\.svg$/,
+  //     // loader: "svg-inline-loader",
+  //     use: ["@svgr/webpack"],
+  //   });
+  //   return config;
+  // },
 };
 
 export default nextConfig;

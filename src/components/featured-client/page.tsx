@@ -1,21 +1,20 @@
-import React from 'react'
-import './featured-client.scss'
-import { StaticImageData } from 'next/image'
-import { FC } from 'react'
-import Image  from 'next/image'
 
-interface clientProps{
-  icon: string | StaticImageData,
-  text:string,
-  width?:number,
-  height?:number,
+
+// import Image from 'next/image';
+import './featured-client.scss'
+import { FC } from 'react'
+import SvgIcon from '../svg-icon/page'
+
+interface FeaturedclientProps{
+  icon?:string;
+  text?:string,
 }
 
-const FeaturedClient:FC<clientProps> = ({icon,text,...props}) => {
+const FeaturedClient:FC<FeaturedclientProps> = ({...props}) => {
   return (
     <div className='featured-client'>
-      <Image className='featured-client--client-logo' width={props.width} height={props.height} src={icon} alt='client-logo'></Image>
-      <span className='featured-client--client-company-name'>{text}</span>
+      <SvgIcon width={25} height={25} url={props.icon}/>
+      <span className='featured-client--client-company-name'>{props.text}</span>
     </div>
   )
 }

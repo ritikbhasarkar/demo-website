@@ -36,8 +36,16 @@
 
                 &--links{
                     @include display-flex-center-div;
-                    gap: 0.3rem;  
+                    gap: 0.4rem;  
                     color: $secondary-text-color;
+                    cursor: pointer;
+
+                    svg{
+                        @include display-flex-center-div;
+                        font-size: 12rem;
+                        transform: translateY(1px);
+                        
+                    }
                 }
             }
         }
@@ -59,8 +67,4 @@
             }
         }
     }
-}
-
-.links-icon{
-    font-size: 0.8rem;
 }
